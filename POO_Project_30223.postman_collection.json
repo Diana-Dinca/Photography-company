@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "fb211ef6-908e-4727-994b-af2b19f5a47f",
+		"name": "POO_Project_30223",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9965234",
+		"_collection_link": "https://speeding-zodiac-555953.postman.co/workspace/POO_Project_30223_2023_2024~1374c885-05eb-4e03-9f12-e3932107677d/collection/9965234-fb211ef6-908e-4727-994b-af2b19f5a47f?action=share&source=collection_link&creator=9965234"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/locatii/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/locatii/all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/locatii/id/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"judet\": \"New_Judet\",\r\n    \"oras\": \"New_Oras\",\r\n    \"strada\": \"New_Strada\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/locatii/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii//updateName/1/New_Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/locatii//updateName/1/New_Name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"programari\": [\r\n        {\r\n            \"id\": 1,\r\n            \"client\": {\r\n                \"id\": 1,\r\n                \"nume\": \"New_Client_Name\",\r\n                \"prenume\": \"New_Client_Prenume\",\r\n                \"cnp\": \"New_Client_Cnp\",\r\n                \"telefon\": \"New_Client_Telefon\",\r\n                \"email\": \"New_Client_Email\",\r\n                \"parola\": \"New_Client_Password\",\r\n                \"adresa\": {\r\n                    \"judet\": \"New_Client_Judet\",\r\n                    \"oras\": \"New_Client_Oras\",\r\n                    \"strada\": \"New_Client_Strada\"\r\n                }\r\n            },\r\n            \"fotograf\": {\r\n                \"id\": 1,\r\n                \"nume\": \"New_Fotograf_Name\",\r\n                \"prenume\": \"New_Fotograf_Prenume\",\r\n                \"cnp\": \"New_Fotograf_Cnp\",\r\n                \"telefon\": \"New_Fotograf_Telefon\",\r\n                \"email\": \"New_Fotograf_Email\",\r\n                \"parola\": \"New_Fotograf_Password\",\r\n                \"adresa\": {\r\n                    \"judet\": \"New_Fotograf_Judet\",\r\n                    \"oras\": \"New_Fotograf_Oras\",\r\n                    \"strada\": \"New_Fotograf_Strada\"\r\n                },\r\n                \"PretMinim\": 100\r\n            },\r\n            \"locatie\": {\r\n                \"id\": 1,\r\n                \"judet\": \"New_Locatie_Judet\",\r\n                \"oras\": \"New_Locatie_Oras\",\r\n                \"strada\": \"New_Locatie_Strada\"\r\n            },\r\n            \"date\": \"2024-01-14T12:00:00\",\r\n            \"pret\": 100,\r\n            \"tipEveniment\": \"New_Tip_Eveniment\"\r\n        }\r\n    ],\r\n    \"detaliiSuplimentare\": \"New_Detalii_Suplimentare\"\r\n}",
+
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/locatii/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii/details_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/locatii/details_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/locatii/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/locatii/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eveniment/all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eveniment/id/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"client\": {\r\n        \"id\": 1,\r\n        \"nume\": \"New_Client_Name\",\r\n        \"prenume\": \"New_Client_Prenume\",\r\n        \"cnp\": \"New_Client_Cnp\",\r\n        \"telefon\": \"New_Client_Telefon\",\r\n        \"email\": \"New_Client_Email\",\r\n        \"parola\": \"New_Client_Password\",\r\n        \"adresa\": {\r\n            \"judet\": \"New_Client_Judet\",\r\n            \"oras\": \"New_Client_Oras\",\r\n            \"strada\": \"New_Client_Strada\"\r\n        }\r\n    },\r\n    \"fotograf\": {\r\n        \"id\": 1,\r\n        \"nume\": \"New_Fotograf_Name\",\r\n        \"prenume\": \"New_Fotograf_Prenume\",\r\n        \"cnp\": \"New_Fotograf_Cnp\",\r\n        \"telefon\": \"New_Fotograf_Telefon\",\r\n        \"email\": \"New_Fotograf_Email\",\r\n        \"parola\": \"New_Fotograf_Password\",\r\n        \"adresa\": {\r\n            \"judet\": \"New_Fotograf_Judet\",\r\n            \"oras\": \"New_Fotograf_Oras\",\r\n            \"strada\": \"New_Fotograf_Strada\"\r\n        },\r\n        \"PretMinim\": 100\r\n    },\r\n    \"locatie\": {\r\n        \"id\": 1,\r\n        \"judet\": \"New_Locatie_Judet\",\r\n        \"oras\": \"New_Locatie_Oras\",\r\n        \"strada\": \"New_Locatie_Strada\"\r\n    },\r\n    \"date\": \"2024-01-14T12:00:00\",\r\n    \"pret\": 100,\r\n    \"tipEveniment\": \"New_Tip_Eveniment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eveniment/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment//updateName/1/New_Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/eveniment//updateName/1/New_Name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"client\": {\r\n        \"id\": 1,\r\n        \"nume\": \"New_Client_Name\",\r\n        \"prenume\": \"New_Client_Prenume\",\r\n        \"cnp\": \"New_Client_Cnp\",\r\n        \"telefon\": \"New_Client_Telefon\",\r\n        \"email\": \"New_Client_Email\",\r\n        \"parola\": \"New_Client_Password\",\r\n        \"adresa\": {\r\n            \"judet\": \"New_Client_Judet\",\r\n            \"oras\": \"New_Client_Oras\",\r\n            \"strada\": \"New_Client_Strada\"\r\n        }\r\n    },\r\n    \"fotograf\": {\r\n        \"id\": 1,\r\n        \"nume\": \"New_Fotograf_Name\",\r\n        \"prenume\": \"New_Fotograf_Prenume\",\r\n        \"cnp\": \"New_Fotograf_Cnp\",\r\n        \"telefon\": \"New_Fotograf_Telefon\",\r\n        \"email\": \"New_Fotograf_Email\",\r\n        \"parola\": \"New_Fotograf_Password\",\r\n        \"adresa\": {\r\n            \"judet\": \"New_Fotograf_Judet\",\r\n            \"oras\": \"New_Fotograf_Oras\",\r\n            \"strada\": \"New_Fotograf_Strada\"\r\n        },\r\n        \"PretMinim\": 100\r\n    },\r\n    \"locatie\": {\r\n        \"id\": 1,\r\n        \"judet\": \"New_Locatie_Judet\",\r\n        \"oras\": \"New_Locatie_Oras\",\r\n        \"strada\": \"New_Locatie_Strada\"\r\n    },\r\n    \"date\": \"2024-01-14T12:00:00\",\r\n    \"pret\": 100,\r\n    \"tipEveniment\": \"New_Tip_Eveniment\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eveniment/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/details_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/eveniment/details_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/eveniment/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/eveniment/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/adresa/all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/adresa/id/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"judet\": \"New_Judet\",\r\n    \"oras\": \"New_Oras\",\r\n    \"strada\": \"New_Strada\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/adresa/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa//updateName/1/New_Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/adresa//updateName/1/New_Name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"judet\": \"New_Judet\",\r\n    \"oras\": \"New_Oras\",\r\n    \"strada\": \"New_Strada\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/adresa/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/details_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/adresa/details_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/adresa/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/adresa/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clienti/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/clienti/all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clienti/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/clienti/id/1"
+			},
+			"response": []
+		},
+
+		{
+			"name": "http://localhost:8080/clienti/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\r\n\t\"nume\": \"New_Name\",\r\n\t\"prenume\": \"New_Name2\",\r\n\t\"email\": \"New_Email\",\r\n\t\"telefon\": \"New_Phone\",\r\n\t\"cnp\": \"New_Cnp\",\r\n\t\"parola\": \"New_Password\",\r\n\t\"adresa\": {\r\n\t\t\"judet\": \"New_Judet\",\r\n\t\t\"oras\": \"New_Oras\",\r\n\t\t\"strada\": \"New_Strada\"\r\n\t},\r\n\t\"programari\": {\r\n\t\t\"fotograf\": {\r\n\t\t\t\"id\": 1\r\n\t\t},\r\n\t\t\"locatie\": {\r\n\t\t\t\"id\": 1\r\n\t\t},\r\n\t\t\"date\": \"2024-01-14T12:00:00\",\r\n\t\t\"pret\": 100,\r\n\t\t\"tipEveniment\": \"Wedding\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/clienti/create"
+			},
+			"response": []
+		},
+
+		{
+			"name": "http://localhost:8080/clienti//updateName/1/New_Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/clienti//updateName/1/New_Name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clienti/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\r\n\t\"nume\": \"New_Name\",\r\n\t\"prenume\": \"New_Name2\",\r\n\t\"email\": \"New_Email\",\r\n\t\"telefon\": \"New_Phone\",\r\n\t\"cnp\": \"New_Cnp\",\r\n\t\"parola\": \"New_Password\",\r\n\t\"adresa\": {\r\n\t\t\"judet\": \"New_Judet\",\r\n\t\t\"oras\": \"New_Oras\",\r\n\t\t\"strada\": \"New_Strada\"\r\n\t},\r\n\t\"programari\": {\r\n\t\t\"fotograf\": {\r\n\t\t\t\"id\": 1\r\n\t\t},\r\n\t\t\"locatie\": {\r\n\t\t\t\"id\": 1\r\n\t\t},\r\n\t\t\"date\": \"2024-01-14T12:00:00\",\r\n\t\t\"pret\": 100,\r\n\t\t\"tipEveniment\": \"Wedding\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/clienti/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clienti/details_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/clienti/details_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/clienti/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/clienti/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/fotografi/all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/id/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/fotografi/id/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/create",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nume\": \"New_Name\",\r\n    \"prenume\": \"New_Prenume\",\r\n    \"cnp\": \"New_Cnp\",\r\n    \"telefon\": \"078564673\",\r\n    \"email\": \"New_Email\",\r\n    \"parola\": \"1234\",\r\n    \"adresa\": {\r\n        \"judet\": \"New_Judet\",\r\n        \"oras\": \"New_Oras\",\r\n        \"strada\": \"New_Strada\"\r\n    },\r\n    \"PretMinim\": 4434\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/fotografi/create"
+			},
+			"response": []
+		},
+
+		{
+			"name": "http://localhost:8080/fotografi//updateName/1/New_Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/fotografi//updateName/1/New_Name"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nume\": \"New_Name\",\r\n    \"prenume\": \"New_Prenume\",\r\n    \"cnp\": \"New_Cnp\",\r\n    \"telefon\": \"078564673\",\r\n    \"email\": \"New_Email\",\r\n    \"parola\": \"1234\",\r\n    \"adresa\": {\r\n        \"judet\": \"New_Judet\",\r\n        \"oras\": \"New_Oras\",\r\n        \"strada\": \"New_Strada\"\r\n    },\r\n    \"PretMinim\": 4434\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/fotografi/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/details_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/fotografi/details_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/fotografi/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/fotografi/delete"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/csv/import_clienti",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "users_import.csv",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/csv/import_clienti"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/csv/export_clienti",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "users_export.csv",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/csv/export_clienti"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/performance/java_logic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/performance/java_logic"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/performance/sql_logic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/performance/sql_logic"
+			},
+			"response": []
+		}
+	]
+}
